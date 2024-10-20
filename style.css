@@ -1,0 +1,45 @@
+body{
+    background-color: #eff1f3;
+    color: #003366;
+}
+nav{
+    text-align: center;
+    background-color: black;
+    
+    
+}
+nav a{
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+nav a:hover{
+    border-bottom: 3px solid rgb(139, 133, 128);
+    color: chocolate;
+}
+
+
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: black 3px solid;
+   
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片的比例并填充整个容器 */
+    border-radius: 50%; /* 使图片变成圆形 */
+}
+
+
+
+
