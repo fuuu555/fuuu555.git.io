@@ -1,45 +1,139 @@
-body{
-    background-color: #eff1f3;
-    color: #003366;
-}
-nav{
-    text-align: center;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Londrina+Sketch&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+body {
+    background-color:#cac9c2; 
+    margin: 0px;
+    padding: 0px;
     
     
 }
-nav a{
-    color: white;
-    display: inline-block;
-    font-size: 18px;
-    margin-left: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 6px 20px;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease;
-}
-nav a:hover{
-    border-bottom: 3px solid rgb(139, 133, 128);
-    color: chocolate;
+
+section {
+    scroll-margin-top:160px; /* 這裡的值應該是導航欄的高度 */
+    min-height: 100vh
+    
 }
 
-
-
-.photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: black 3px solid;
+.resume-header {
+    font-family: "Arima", system-ui;
+    top: 10px;       /* 距離上方 10px */
+    left: 10px;      /* 距離左側 10px */
+    font-size: 36px; /* 字體大小 */
+    font-weight: bold; /* 粗體 */
+    color: #333;     /* 字體顏色 */
+    position: fixed; 
+    z-index: 1000; 
    
 }
+nav {
+   
+    text-align:center; 
+    background-color:gray;
+
+    position: fixed;  /* 保持導航欄固定在頂部 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 6px gray;
+
+   
+  
+}
+
+nav a {
+    font-family: "Arima", system-ui;
+    color: #333;;
+    display: inline-block;
+    font-size: 26px;
+    justify-content: left;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    letter-spacing: 2px
+    
+}
+
+nav a:hover {
+    border-bottom: 3px solid white;
+    color:rgb(54, 53, 53);
+}
+.container{
+    font-family: "LXGW WenKai TC", cursive;
+    color:#3d3b3b;
+    display: flex;  
+    margin:125px;
+    justify-content: center; /*橫軸至中 */
+    align-items: center;       /*縱軸致中 */
+    
+   
+
+}
+
+.ps , .pis {
+    display: flex;
+ 
+    flex-direction: column;
+}
+.ps{
+    margin-right: 100px;
+}
+.pis{
+    font-size: 30px;
+    margin-left: 100px;
+    
+}
+.photo-container {
+   border: #595656 solid 1px;
+    width: 200px; /* 長方形寬度 */
+    height: 250px; /* 長方形高度 */
+    border-radius: 65px; /* 圓角效果 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* 距離 social 的間距 */
+}
+
 .photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 保持图片的比例并填充整个容器 */
-    border-radius: 50%; /* 使图片变成圆形 */
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+     margin-left: 25px; /*照片往右 */
+}
+
+.social a {
+    font-size: 40px; /* 調整數值來改變圖標大小 */
+    margin: 0 10px; /* 增加圖標之間的間距 */
+    color: #666666 ;
+}
+
+.social a :hover {
+    color:rgb(54, 53, 53);
+}
+
+.label{
+    font-weight: bold;/* 粗體 */
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+    padding: 20px;
+    max-width: 100%;
+    overflow: visible; 
 }
 
 
-
-
+.codeskill{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px
+    
+    
+}

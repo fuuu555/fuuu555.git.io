@@ -5,32 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'    rel='stylesheet'> 
 </head>
-<body >
-  
+<body>
+
+    <!-- 固定左上角的RESUME -->
+    <div class="resume-header">
+        RESUME
+    </div>
+
+    <!-- 導航欄 -->
     <nav>
-        <a href="#home">Home</a>
+        
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skill">Skill</a>
     </nav>
 
-        <div class="ps">
-            <div class="photo">
-               <img src="photo2.jpg" alt="photo" >
+    <!-- 個人資訊區塊 -->
+    <section id="about">
+        <div class="container">
+            <div class="ps" >
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="img/photo2.png" alt="photo">
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                     <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
             </div>
-            <div class="social">
-               <p>link</p>
+            
+            <div class="pis">
+                <div class="info" id="about">
+                    <p><span class="label">姓名:</span> 陳章幅</p>
+                    <p><span class="label">學校及科系:</span> 中原大學資管系</p>
+                    <p><span class="label">生日:</span> 2005/05/05</p>
+                    <p><span class="label">興趣:</span> 玩沙盒類遊戲</p>
+                </div>
             </div>
         </div>
-    
-        <div class="pis">
-            <div class="info">
-               <p>生日</p>
-            </div>
-            <div class="slogan">
-                <p>slogan</p>
+        <div class="slogan" >
+            <p class=>“只要我成功的決心足夠強大，那麼失敗就無法擊敗我"</p>
+        </div>
+    </section>
+
+    <!-- Skill 區塊 -->
+    <section id="skill" >
+        <div class="codeskill">
+            <h2>Skill</h2>
+        </div>
+
+        <div class="bar">
+            <div class="code">
+                <p>HTML</p>
+                <progress value="80" max="100"></progress>
             </div>
         </div>
- 
-  
+
+        <div class="bar">
+            <div class="code">
+                <p>Java</p>
+                <progress value="70" max="100"></progress>
+            </div>
+        </div>
+
+        <div class="bar">
+            <div class="code">
+                <p>Python</p>
+                <progress value="85" max="100"></progress>
+            </div>
+        </div>
+
+        <div class="bar">
+            <div class="code">
+                <p>R</p>
+                <progress value="60" max="100"></progress>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
