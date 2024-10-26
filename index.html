@@ -24,7 +24,8 @@
     </nav>
 
     <!-- 個人資訊區塊 -->
-    <section id="about">
+    <section  class="about"  id="about">
+      
         <div class="container">
             <div class="ps" >
                 <div class="photo-container">
@@ -32,6 +33,7 @@
                         <img src="img/photo.png" alt="photo">
                     </div>
                 </div>
+
                 <div class="social">
                     <a href="#"><i class='bx bxl-instagram'></i></a>
                      <a href="#"><i class='bx bxl-github'></i></a>
@@ -45,10 +47,11 @@
                     <p><span class="label">姓名:</span> 陳章幅</p>
                     <p><span class="label">學校及科系:</span> 中原大學資管系</p>
                     <p><span class="label">生日:</span> 2005/05/05</p>
-                    <p><span class="label">興趣:</span> 玩沙盒類遊戲</p>
+                    <p><span class="label">興趣:</span> 玩沙盒類遊戲</p>    
                 </div>
             </div>
         </div>
+
         <div class="slogan" >
             <p class=>“只要我成功的決心足夠強大，那麼失敗就無法擊敗我"</p>
         </div>
@@ -56,7 +59,7 @@
     </section>
 
     <!-- Skill 區塊 -->
-    <section id="skill"  class="skill">
+    <section class="skill" id="skill"  >
         <div class="skilltitle">
             <h2>Skill</h2>
         </div>
@@ -107,40 +110,51 @@
         </div>
     </section>
     
-  
-    <section id="experience" >
+  <!-- experience -->
+    <section  class= "experience" id= "experience" >
         <div class="extitle" >
             <h2>Experience</h2>
         </div>
-    
     
         <div class="ex" > 
             <div class="e">
                 <div class="title">
                     <p>管理學</p>
                 </div>
+                
                 <div class="eimg">
                     <img src="./img/emg1.jpg" >
                 </div>
+
+                <button class="prev" onclick="changeImage(-1,0)">&#10094;</button>
+                <button class="next" onclick="changeImage(1,0)">&#10095;</button>
+
                 <div>
-                    <p>管理學的服務活動旨在清理海岸垃圾，維護海岸環境整潔，還給潮間帶生物一個乾淨的生活空間。我們希望促進生態平衡，讓更多人認識到環境保護的迫切性和重要性，進而在日常生活中積極實踐環保行動，共同為保護我們的地球盡一份力。</p>
+                    <p>管理學的服務活動旨在清理海岸垃圾，維護海岸環境整潔，還給潮間帶生物一個乾淨的生活空間。
+                        我們希望促進生態平衡，讓更多人認識到環境保護的迫切性和重要性，進而在日常生活中積極實踐環保行動，
+                        共同為保護我們的地球盡一份力。
+                    </p>
                 </div>
             </div>
-    
-        <div class="e">
-                
+
+        <div class="e">  
             <div class="title">
-                    <p>讀書會</p>
+                <p>讀書會</p>
             </div>
+
             <div class="eimg">
                     <img src="img/emg2.jpg" >
             </div>
+
+            <button class="prev" onclick="changeImage(-1,1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1,1)">&#10095;</button>
+
             <div>
                 <p>透過讀書會這種活動，我們可以透過與他人交談或交換看法來了解每個人對於不同事物的不同看法，讓我們有更多不同點觀念整合在腦中，
                     並在未來的生活中應用這些知識。
-                    </p>
+                </p>
             </div>
-            </div>
+        </div>
     
         <div class="e">
                 
@@ -151,6 +165,10 @@
             <div class="eimg">
                 <img src="" >
             </div>
+
+            <button class="prev" onclick="changeImage(-1,2)">&#10094;</button>
+            <button class="next" onclick="changeImage(1,2)">&#10095;</button>
+
             <div>
                 <p></p>
             </div>

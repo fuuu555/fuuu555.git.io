@@ -3,40 +3,41 @@
 body {
     background-color:#dfdfd9; 
     margin: 0px;
-    padding: 0px;
-    
-    
+    padding: 0px; 
 }
 
 section {
     scroll-margin-top:160px; /* 這裡的值應該是導航欄的高度 */
     min-height: 100vh
 }
+.about ,.skill ,.experience{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-bottom:  20px;
+    margin-left: 160px;
+    
+}
 
 .resume-header {
     font-family: "Arima", system-ui;
-    top: 10px;       /* 距離上方 10px */
-    left: 10px;      /* 距離左側 10px */
-    font-size: 36px; /* 字體大小 */
-    font-weight: bold; /* 粗體 */
-    color: white;     /* 字體顏色 */
+    top: 5px;       
+    left: 10px;      
+    font-size: 36px; 
+    font-weight: bold; 
+    color: white;     
     position: fixed; 
-    z-index: 1000; 
+    z-index: 2; 
    
 }
 nav {
-   
     text-align:center; 
     background-color:rgb(73, 71, 71);
     position: fixed;  /* 保持導航欄固定在頂部 */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1;
     box-shadow: 0 2px 6px gray;
-
-   
-  
 }
 
 nav a {
@@ -51,43 +52,47 @@ nav a {
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
     letter-spacing: 2px
-    
 }
 
 nav a:hover {
     border-bottom: 3px solid white;
     color:  rgb(238, 227, 211);
 }
+
+/* about 區域 */
 .container{
+    padding-top: 80px;
     font-family: "LXGW WenKai TC", cursive;
     color:#3d3b3b;
     display: flex;  
     margin:125px;
-    justify-content: center; /*橫軸至中 */
-    align-items: center;       /*縱軸致中 */ 
+    justify-content: center; 
+    align-items: center;       
 }
 
 .ps , .pis {
     display: flex;
     flex-direction: column;
 }
+
 .ps{
     margin-right: 100px;
 }
+
 .pis{
     font-size: 30px;
-    margin-left: 100px;
-    
+    margin-left: 100px; 
 }
+
 .photo-container {
    border: #595656 solid 2px;
-    width: 200px; /* 長方形寬度 */
-    height: 250px; /* 長方形高度 */
-    border-radius: 65px; /* 圓角效果 */
+    width: 200px; 
+    height: 250px; 
+    border-radius: 65px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* 距離 social 的間距 */
+    margin-bottom: 20px; 
 }
 
 .photo img {
@@ -95,13 +100,12 @@ nav a:hover {
     height: 200px;
     border-radius: 20%;
     object-fit: cover;
-    margin-left: 25px; /*照片往右 */
-    
+    margin-left: 25px;  
 }
 
 .social a {
-    font-size: 40px; /* 調整數值來改變圖標大小 */
-    margin: 0 10px; /* 增加圖標之間的間距 */
+    font-size: 40px; 
+    margin: 0 10px; 
     color: #666666 ;
 }
 
@@ -110,7 +114,7 @@ nav a:hover {
 }
 
 .label{
-    font-weight: bold;/* 粗體 */
+    font-weight: bold;
 }
 
 .slogan {
@@ -127,12 +131,14 @@ nav a:hover {
     
 }
 
-
+/* skill 區域 */
 
 .skill{
     font-family: "Arima", system-ui;
 }
+
 .skilltitle {
+   padding-top: 30px;
     color: #333;
     font-weight: bold;
     text-align: center;
@@ -148,6 +154,7 @@ nav a:hover {
         width: var(--target-width) /* 到 自訂的% 結束 */
     }
 }
+
 .bar {
     display: flex;
     justify-content: center;
@@ -166,11 +173,9 @@ nav a:hover {
   
 }
 
-
-
 .progress-bar {
     width: 100%;
-    height: 10px;
+    height: 15px;
     background-color: #bfbdbd; 
     border-radius: 10px;
     overflow: hidden;
@@ -185,6 +190,7 @@ nav a:hover {
     animation: fillProgress 2s ease-out forwards; /* 動畫時長2秒，從慢到快效果 */
 }
 
+/* 設定幾% */
 .progress-html {
     --target-width: 60%;
 }
@@ -205,7 +211,7 @@ nav a:hover {
     --target-width: 30%;
 }
 
-/* ex */
+/* experience 區域 */
 .extitle{  
     font-family: "Arima", system-ui;
     color: #333;
@@ -214,8 +220,8 @@ nav a:hover {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: bold;
+    padding-top: 20px;
 }
-
 
 .ex{
     font-family: "LXGW WenKai TC", cursive;
@@ -226,16 +232,16 @@ nav a:hover {
 }
 
 .e{
-    border: gray solid 3px;
-    width: 350px;
-    height: 550px;
+    border: gray solid 2px;
+    width: 320px;
+    height: 560px;
     margin: 30px;
 }
 
 .title{
     background-color: rgb(73, 71, 71);
     border-top: gray 0.1px solid;
-    width: 350px;
+    width: 320px;
     height: 60px;
     text-align: center;
     font-size: 23px;
@@ -250,8 +256,9 @@ nav a:hover {
  }
 
 .eimg{
-    width: 350px;
+    width: 320px;
     height: 320px;
+   
     overflow: hidden;
     border-bottom: black 1.5px solid;
     border-top: black 2px solid;
@@ -261,6 +268,10 @@ nav a:hover {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
-   
 }
+
+.next {
+    float: right;
+}
+
 
