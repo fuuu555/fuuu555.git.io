@@ -1,3 +1,5 @@
+// 讓每次滑到bar時候再跑一次 
+
 document.addEventListener("DOMContentLoaded", () => {
     const skillsSection = document.querySelector('#skill');
     const progressBars = document.querySelectorAll('.progress');
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(skillsSection);
         
 });
+// 照片可以點箭頭切換//
 
 document.addEventListener("DOMContentLoaded", () => {
     const imageGroups = [

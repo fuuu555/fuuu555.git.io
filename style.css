@@ -7,13 +7,13 @@ body {
 }
 
 section {
-    scroll-margin-top:160px; /* 這裡的值應該是導航欄的高度 */
+    scroll-margin-top:160px; 
     min-height: 100vh
 }
 .about ,.skill ,.experience{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     width: 80%;
-    margin-bottom:  20px;
+    margin-bottom:  30px;
     margin-left: 160px;
     
 }
@@ -27,6 +27,7 @@ section {
     color: white;     
     position: fixed; 
     z-index: 2; 
+    letter-spacing: 3px;
    
 }
 nav {
@@ -38,9 +39,11 @@ nav {
     right: 0;
     z-index: 1;
     box-shadow: 0 2px 6px gray;
+   
 }
 
 nav a {
+    margin-right: 15px;
     font-family: "Arima", system-ui;
     color: white;
     display: inline-block;
@@ -51,7 +54,7 @@ nav a {
     padding: 6px 10px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
-    letter-spacing: 2px
+    letter-spacing: 7px
 }
 
 nav a:hover {
@@ -85,10 +88,10 @@ nav a:hover {
 }
 
 .photo-container {
-   border: #595656 solid 2px;
+    box-shadow: 0 0 8px black;
     width: 200px; 
     height: 250px; 
-    border-radius: 65px; 
+    border-radius: 25px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,6 +105,7 @@ nav a:hover {
     object-fit: cover;
     margin-left: 25px;  
 }
+
 
 .social a {
     font-size: 40px; 
@@ -127,8 +131,7 @@ nav a:hover {
     padding-bottom: 20px; 
     max-width: 100%;
     overflow: visible;
-    position: relative; 
-    
+    position: relative;  
 }
 
 /* skill 區域 */
@@ -248,7 +251,7 @@ nav a:hover {
     font-weight: bold;
  }
  .title p {
-     color:rgb(210, 207, 207);
+     color:white;
  }
  
  .title p:hover {
@@ -273,5 +276,12 @@ nav a:hover {
 .next {
     float: right;
 }
-
-
+footer{
+    text-align: center;
+    background-color: rgb(73, 71, 71);
+    height:20px;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+}
